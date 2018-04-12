@@ -1,7 +1,18 @@
 ﻿
 import discord
+import discord.ext
+from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
+import Pymoe
+import simplejson as json
+import requests as rq
+from champs import champs
+import os
 import requests
 import math
+
+api = str(os.environ.get("RIOT_KEY"))
 
 client = discord.Client()
 
@@ -251,5 +262,7 @@ async def on_ready():
     print('------')
 
 client.run(DISCORD_TOKEN)
+
+bot.run(str(os.environ.get("bot_TOKEN"))
 
 
