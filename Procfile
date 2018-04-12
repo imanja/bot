@@ -1,1 +1,1 @@
-worker: node bot.js
+worker: python golden_boy.py
